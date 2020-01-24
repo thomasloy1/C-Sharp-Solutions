@@ -1,0 +1,37 @@
+using System;
+
+namespace EX2B
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+
+        }
+
+        void WeaponAmmo(string rifle = "M4", string ammo = "5.56x45")
+        {
+            Console.WriteLine($"The {rifle} takes \"{ammo}\".");
+
+        }
+
+        void weaponAmmo(string rifle, string ammo)
+        {
+            Console.WriteLine($"The {rifle} takes \"{ammo}\"!");
+        }
+
+      
+        void AnimalSound(string rifle)
+        {
+            weaponAmmo(rifle, "5.56x45");
+        }
+
+        void AnimalSound()
+        {
+            AnimalSound("M4");
+           
+        }
+    }
+
+}
