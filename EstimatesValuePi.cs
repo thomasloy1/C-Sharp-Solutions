@@ -12,11 +12,11 @@ namespace Lab3A
             Console.Write("How many iterations?");
 
             // Converting the input to int and setting up the Iterations method
-            int input;
-            int.TryParse(Console.ReadLine(), out input);
-            int iter = input;
-            int count;
-            int i;
+            long input;
+            long.TryParse(Console.ReadLine(), out input);
+            long iter = input;
+            long count;
+            long i;
 
             // Iteration Method takes in a random and the iterations and outputs a tuple of iterations and count
             // Count is the number of coordinates inside our radius of 1
@@ -43,10 +43,10 @@ namespace Lab3A
 
         }
 
-        private static (int, int) Iterations(Random rnd, int iter)
+        private static (long, long) Iterations(Random rnd, long iter)
         {
-            int i;
-            int count = 0;
+            long i;
+            long count = 0;
 
             // Makes a loop so the iterations count up
             for (i = 0; i < iter; ++i)
